@@ -32,7 +32,7 @@ At the end of the lab you should be able to
 
 ## List Item states.
 In order to correctly change the states of list items and buttons you must manipulate the Elements classes
-A default list item looks like this in html
+**A default list item** looks like this in html
 ```
 <li id="todoItem" class="todoItem">
   <span class="label">testi</span>
@@ -46,5 +46,21 @@ A default list item looks like this in html
   </div>
 </li>
 ```
+
+**A completed list item** looks like this in html
+```
+<li id="todoItem" class="done todoItem">
+  <span class="label">Item</span>
+  <div class="actions">
+    <button class="btn-picto" type="button">
+      <i aria-hidden="true" class="material-icons" onclick="toggleCheckbox(0)">check_box</i>
+    </button>
+    <button class="btn-picto" type="button" aria-label="Delete" title="Delete">
+      <i aria-hidden="true" class="material-icons" onclick="deleteItem(0)">delete</i>
+    </button>
+  </div>
+</li>
+```
+Notice all html elements and classes. They are improtant since you will be creating them programmatically in methods like addItem(). And editing them in other like toggleCheckbox()
 
 
