@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM-TODO</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+      <!-- Your Code here -->
+      <script src="main.js"></script>
+</head>
+<body>
+  <div id="todolist">
+    <h1>
+      Todo List
+      <span>Get things done, one item at a time.</span>
+    </h1>
+  
+    <div>
+        <span style="float:right;" onclick="deleteAll()">delete all</span>
+    </div>
+    <div>
+      <ul id="mytodolist" name="todolist" >
+        <li id="todoItem" class="done todoItem">
+          <span class="label">Item</span>
+          <div class="actions">
+            <button class="btn-picto" type="button">
+              <i aria-hidden="true" class="material-icons" onclick="toggleCheckbox(0)">check_box</i>
+            </button>
+            <button class="btn-picto" type="button" aria-label="Delete" title="Delete">
+              <i aria-hidden="true" class="material-icons" onclick="deleteItem(0)">delete</i>
+            </button>
+          </div>
+        </li>
+      </ul>
+      <togglebutton 
+                    label="Move done items at the end?"
+                    name="todosort"
+                   />
+    </div>
+    <p class="emptylist">Your todo list is empty.</p>
+  
+    <form id="newItemForm" name="newItemForm">
+      <label for="newitem">Add to the todo list</label>
+      <input type="text" name="newitem" id="newitem">
+      <button type="button" onclick="addNewItem()">Add item</button>
+    </form>
+  </div>
+    
+</body>
+</html>
