@@ -14,21 +14,13 @@
    */
   var toggleCheckbox = function(itemIndex){
 
-    //console.log(itemIndex)
-
     var item = document.getElementsByClassName("todoItem")[itemIndex]
 
     if(item.children[1].children[0].children[0].innerText == "check_box"){
-        item.className = "todoItem"
-        item.children[1].children[0].children[0].innerText = "check_box_outline_blank"
+        //alter item
     }else{
-        item.className = "todoItem done"
-        item.children[1].children[0].children[0].innerText = "check_box"
+        //alter item
     }
-    
-
-    //console.log(itemIndex)
-
 
   }
 
@@ -39,7 +31,7 @@
    */
   var deleteItem = function(itemIndex){
 
-    document.getElementsByClassName("todoItem")[itemIndex].remove();
+   //remove item use document to get the array of items. Hint: use getByClassName
   }
 
 
@@ -51,11 +43,7 @@
 
       var items = document.getElementsByClassName("todoItem")
 
-      while (items.length > 0) {
-          console.log("deleting")
-          items[items.length-1].remove()
-      }
-
+    //use a loop to delete items using the remove function
   }
 
 
@@ -85,6 +73,7 @@
     var li = document.createElement("li");
     li.id = "todoItem"
     li.className = "todoItem"
+
     var itemSpan = document.createElement("span")
     itemSpan.className = "label"
     itemSpan.innerText = document.getElementById("newitem").value
@@ -94,32 +83,18 @@
 
     //checkbox button
     var checkBoxButton = document.createElement("button")
-    checkBoxButton.className = "btn-picto"
-    checkBoxButton.type = "button"
+    //attrs
 
     var iCheckBox = document.createElement("i")
-    iCheckBox.className = "material-icons"
-
-
-    iCheckBox.addEventListener("click", function(){
-        toggleCheckbox(itemsLength);
-    }, false);
-
-    iCheckBox.innerText = "check_box_outline_blank"
+    //attrs and addEventListener
 
     checkBoxButton.appendChild(iCheckBox)
 
     //delete button
     var deleteButton = document.createElement("button")
-    deleteButton.className = "btn-picto"
-    deleteButton.type = "button"
-
+    // attrs
     var iDeleteButton = document.createElement("i")
-    iDeleteButton.className = "material-icons"
-    iDeleteButton.addEventListener("click", function(){
-        deleteItem(itemsLength);
-    }, false);
-    iDeleteButton.innerText = "delete"
+    // attrs and addEventListener
 
     deleteButton.appendChild(iDeleteButton)
 
@@ -132,6 +107,5 @@
 
     document.getElementById("mytodolist").appendChild(li)
 
-    //console.log(li)
-      //console.log(document.getElementById("newitem").value)
+
   }
