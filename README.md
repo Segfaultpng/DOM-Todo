@@ -32,4 +32,19 @@ At the end of the lab you should be able to
 
 ## List Item states.
 In order to correctly change the states of list items and buttons you must manipulate the Elements classes
+A default list item looks like this in html
+```
+<li id="todoItem" class="todoItem">
+  <span class="label">testi</span>
+  <div>
+    <button class="btn-picto" type="button">
+      <i class="material-icons">check_box_outline_blank</i>
+    </button>
+    <button class="btn-picto" type="button">
+      <i class="material-icons">delete</i>
+    </button>
+  </div>
+</li>
+```
+
 
