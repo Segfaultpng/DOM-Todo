@@ -1,0 +1,2 @@
+# DOM-Todo
+In this lab you will create a todo list by manipulating the DOM
