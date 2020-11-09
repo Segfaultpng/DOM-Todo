@@ -47,6 +47,7 @@ In order to correctly change the states of list items and buttons you must manip
   </div>
 </li>
 ```
+![alt text](assests/listitemnew.png)
 
 **A completed list item** looks like this in html
 ```
@@ -62,6 +63,8 @@ In order to correctly change the states of list items and buttons you must manip
   </div>
 </li>
 ```
+![alt text](assests/listitemcompleted.png)
+
 Notice all html elements and classes. They are improtant since you will be creating them programmatically in methods like addItem(). And editing them in other like toggleCheckbox()
 
 
