@@ -31,7 +31,8 @@ At the end of the lab you should be able to
 4. Delete all items via delete all
 
 ## List Item states.
-In order to correctly change the states of list items and buttons you must manipulate the Elements classes
+In order to correctly change the states of list items and buttons you must manipulate the Elements classes.
+
 **A default list item** looks like this in html
 ```
 <li id="todoItem" class="todoItem">
