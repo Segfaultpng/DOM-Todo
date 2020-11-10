@@ -68,6 +68,6 @@ In order to correctly change the states of list items and buttons you must manip
 Notice all html elements and classes. They are important since you will be creating them programmatically in methods like addItem(). And editing them in other like toggleCheckbox()
 
 ## How to run
-To run project using php use php -S 127.0.0.1:port in the project folder.
+To run project using php use `php -S 127.0.0.1:port` in the project folder.
 
 
